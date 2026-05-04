@@ -8,7 +8,8 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://shopauto-api.onrender.com',
-        changeOrigin: true
+        changeOrigin: true,
+        // Eliminamos el rewrite para que el backend reciba el prefijo /api correctamente
       }
     }
   }
